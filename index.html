@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background-color: #141414;
+            background-color: #1a1919;
             color: #fff;
             display: flex;
             justify-content: center;
@@ -21,7 +21,7 @@
             background-color: rgba(255, 255, 255, 0.1);
             padding: 40px;
             border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 20px rgba(43, 39, 39, 0.5);
             width: 300px;
         }
         .login-container h2 {
@@ -49,3 +49,26 @@
             background-color: #f40612;
         }
     </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>ERP1 Login</h2>
+        <input type="text" placeholder="Username" id="username">
+        <input type="password" placeholder="Password" id="password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <script>
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Placeholder for actual login logic
+            if (username === 'admin' && password === 'password') {
+                alert('Login successful!');
+                // Redirect to dashboard or main page
+            } else {
+                alert('Invalid username or password');
+            }
+        }
+    </script>
